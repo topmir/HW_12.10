@@ -6,24 +6,37 @@
 </head>
 <body>
     <header> 
-            <table width="100%">
-                    <tbody>
-                        <td>
-                            <img src="Images/Logo.png"/>
-                            <a href="../Planets.html">Planets</a>
-                        </td>
-                        <td>
-                            <a href="../News.html">News</a>
-                        </td>
-                        <td>
-                            <a href="../contactUs.html">Contact us</a>
-                        </td>
-                        <td>
-                            <a href="../Gallery.html">Gallery</a>
-                        </td>
-                    </tbody>
-                </table>
+        <!-- Малко си по прекалила с табулациите. По една е предостатъчно -->
+        <!-- Можеш без проблем да поставиш и <nav> тук -->
+        <table width="100%">
+            <tbody>
+                <td>
+                    <img src="Images/Logo.png"/>
+                    <!-- Този линк трябваше да е на нов ред под самия header. -->
+                    
+                </td>
+                <td>
+                    <!-- Всичките ти .html страници се намират на едно и също място, не ти трябват двуеточиата. 
+                    Те щяха да ти трябват ако се налагаше да се качиш една директория нагоре преди да стигнеш до желания файл -->
+                    <a href="News.html">News</a>
+                </td>
+                <td>
+                    <a href="contactUs.html">Contact us</a>
+                </td>
+                <td>
+                    <a href="Gallery.html">Gallery</a>
+                </td>
+            </tbody>
+        </table>
     </header>
+
+    <br/>
+
+    <nav>
+        <a href="../Planets.html">Planets</a>
+    </nav>
+    
+    <!-- Всичко надолу можеш да сложиш без проблем в <main> или <article> или <section>, който от трите тага ти прецениш, че е най-подходящ -->
     <h1>Solar system</h1>
     <table>
         <tr>
@@ -59,8 +72,9 @@
             </td>
         </tr>
     </table>
-    <img src="sol.jpg" usemap="#image-map">
-    <map name="sol.jpg">
+    <!-- Гледай да не оставяш излишни тагове -->
+    <!-- Image map-a трябва да е обвързан със горния <img> таг.   -->
+    <map name="solarSystem">
         <area target="_blank" alt="Mercury" title="Mercury" href="Mercury.html" coords="143,86,213,787" shape="rect">
         <area target="_self" alt="Venus" title="Venus" href="Venus.html" coords="215,87,250,788" shape="rect">
         <area target="_self" alt="Earth" title="Earth" href="Earth.html" coords="252,89,294,786" shape="rect">
@@ -71,32 +85,33 @@
         <area target="_self" alt="Neptune" title="Neptune" href="" coords="960,93,1069,782" shape="rect">
         <area target="_self" alt="Sun" title="Sun" href="" coords="5,82,113,782" shape="rect">
     </map>
-    <span>
-            <ol type="1">
-                <li>
-                    <a href= "Mercury.html"> Mercury</a>
-                </li>
-                <li>
-                    <a href= "Venus.html"> Venus</a>
-                </li>
-                <li>
-                    <a href= "Earth.html">Earth</a>
-                </li>
-                <li>
-                    Mars
-                </li>
-                <li>
-                    Jupiter
-                </li>
-                <li>
-                    Saturn
-                </li>
-                <li>
-                    Uranus
-                </li>
-                <li>
-                    Neptune
-                </li>
-            </ol>
-        </span>
+    <!-- Този спан можеш без проблем да го промениш на <nav> тък като реално съдържанието играе роля на навигация -->
+    <nav>
+        <ol type="1">
+            <li>
+                <a href= "Mercury.html"> Mercury</a>
+            </li>
+            <li>
+                <a href= "Venus.html"> Venus</a>
+            </li>
+            <li>
+                <a href= "Earth.html">Earth</a>
+            </li>
+            <li>
+                Mars
+            </li>
+            <li>
+                Jupiter
+            </li>
+            <li>
+                Saturn
+            </li>
+            <li>
+                Uranus
+            </li>
+            <li>
+                Neptune
+            </li>
+        </ol>
+    </nav>
 </body>
